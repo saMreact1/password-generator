@@ -22,13 +22,13 @@ function generatePasswords() {
 }
 
 function copyOne() {
-    passwordBox1.select();
+    // passwordBox1.select();
     document.execCommand("copy");
     popup.style.visibility = "visible";
 }
 
 function copyTwo() {
-    passwordBox2.select();
+    // passwordBox2.select();
     document.execCommand("copy");
     popup.style.visibility = "visible";
 }
@@ -37,4 +37,4 @@ function hidePopup() {
     popup.style.visibility = "hidden";
 };
 
-setTimeout("hidePopup()", 7000);
+setTimeout("hidePopup()", 6000);
