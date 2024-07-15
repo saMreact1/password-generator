@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: cursive;
+}
+
+.container {
+    width: 70%;
+    background-color: #1F2937;
+    margin: 4.5rem auto;
+    padding: 5rem 4rem;
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+.container h1 span {
+    display: block;
+    color: #10B981;
+}
+
+.container p {
+    color: #D5D4D8;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.container button {
+    background-color: #10B981;
+    color: #fff;
+    width: 191px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 2.5rem;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.container hr {
+    border-style:groove;
+    border-color: #2F3E53;
+    margin: 2rem 0;
+}
+
+.container input {
+    background-color: #273549;
+    color: #fff;
+    width: 211px;
+    height: 39px;
+    margin-right: .7rem;
+    padding-left: .5rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.container input:focus {
+    outline: none;
+}
+
+
+
+@media screen and (max-width: 824px) {
+    .container input {
+        width: 46.5%;
+    }
+
+    .container p {
+        margin-top: .7rem;
+        line-height: 24px;
+    }
+}
+
+
+@media screen and (max-width: 736px) {
+    .container input {
+        margin-right: .3rem;
+    }
+}
+
+
+@media screen and (max-width: 652px) {
+    .container h1 {
+        font-size: 32px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    .container button {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 558px) {
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    .container button {
+        width: 150px;
+        padding: 10px 8px;
+        font-size: 12.7px;
+    }
+}
+
+
+@media screen and (max-width: 558px) {
+    .container {
+        width: 80%;
+        margin: 5rem auto;
+        padding: 3rem 2rem;
+    }
+}
