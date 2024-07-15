@@ -147,8 +147,13 @@ body {
 
 
 @media screen and (max-width: 400px) {
+    .container {
+        width: 78%;
+        padding: 3rem 1.8rem;
+    }
+
     .container h1 {
-        font-size: 28px;
+        font-size: 27px;
     }
 
     .container p {
@@ -157,5 +162,9 @@ body {
 
     .container button {
         font-size: 14px;
+    }
+
+    .container input {
+        margin-right: .2rem;
     }
 }
