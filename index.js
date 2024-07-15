@@ -4,6 +4,8 @@ const lenght = 12;
 const passwordBox1 = document.getElementById('passwordBoxOne');
 const passwordBox2 = document.getElementById('passwordBoxTwo');
 
+let popup = document.getElementById('copied');
+
 function generatePasswords() {
     let randomPassword1 = "";
     randomPassword1 += characters[Math.floor(Math.random() * characters.length)];
@@ -22,9 +24,17 @@ function generatePasswords() {
 function copyOne() {
     passwordBox1.select();
     document.execCommand("copy");
+    popup.style.visibility = "visible";
 }
 
 function copyTwo() {
     passwordBox2.select();
     document.execCommand("copy");
+    popup.style.visibility = "visible";
 }
+
+function hidePopup() {
+    popup.style.visibility = "hidden";
+};
+
+setTimeout("hidePopup()", 7000);
