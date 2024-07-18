@@ -4,7 +4,7 @@ const lenght = 12;
 const passwordBox1 = document.getElementById('passwordBoxOne');
 const passwordBox2 = document.getElementById('passwordBoxTwo');
 
-let popup = document.getElementById('copied');
+let popUp = document.getElementById('copied');
 
 function generatePasswords() {
     let randomPassword1 = "";
@@ -22,19 +22,37 @@ function generatePasswords() {
 }
 
 function copyOne() {
-    // passwordBox1.select();
+    passwordBox1.select();
     document.execCommand("copy");
-    popup.style.visibility = "visible";
 }
 
 function copyTwo() {
-    // passwordBox2.select();
+    passwordBox2.select();
     document.execCommand("copy");
-    popup.style.visibility = "visible";
 }
 
-function hidePopup() {
-    popup.style.visibility = "hidden";
-};
+if (passwordBox1) {
+    try {
+        passwordBox1.addEventListener('click', () => {
+            popUp.textContent = "COPIED";
+            setTimeout(() => {
+                popUp.textContent = '';
+            }, 2000)
+        });
+    } catch (err) {
+        console.log('id not found');
+    }
+}
 
-setTimeout("hidePopup()", 6000);
+if (passwordBox2) {
+    try {
+        passwordBox2.addEventListener('click', () => {
+            popUp.textContent = "COPIED";
+            setTimeout(() => {
+                popUp.textContent = '';
+            }, 2000)
+        });
+    } catch (err) {
+        console.log('id not found');
+    }
+}

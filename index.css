@@ -20,12 +20,10 @@ body {
 .container h5 {
     color: #D5D4D8;
     position: absolute;
-    visibility: hidden;
     text-align: center;
     top: 1rem;
     right: 45%;
     font-size: 18px;
-    transition: ease-in-out 0.4;
 }
 
 .container h1 {
